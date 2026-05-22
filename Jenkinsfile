@@ -31,7 +31,7 @@ pipeline{
         sh """
         docker stop my-app-container ||true
         docker rm my-app-container ||true
-        docker run -d -p 5000:5000 --name my-app-container my-python-app
+        docker run -d -p 5001:5001 --name my-app-container my-python-app
         """
       }
     }
